@@ -10,17 +10,38 @@
 </head>
 
 <body>
-    <label for="km">Numero di chilometri da percorrere:</label>
-    <input type="number" id="km" name="km" step="0.01">
-    <label for="eta">Età del passeggero:</label>
-    <input type="number" id="eta" name="eta">
-    <button type="button" id="prezzo">Calcola prezzo</button>
-    <h1></h1>
+    <h1>Calcola il prezzo del tuo biglietto</h1>
+    <div class="container">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+        <div>
+            <label for="km">Chilometri da percorrere:</label>
+            <input type="number" id="km" name="km">
+        </div>
+        <div>
+            <label for="eta">Età del passeggero:</label>
+            <select id="eta" name="eta">
+                <option value="minorenni">Minorenne</option>
+                <option value="">Maggiorenne</option>
+                <option value="over65">Over 65</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button type="button" id="prezzo">Genera</button>
+            <input type="reset" value="Reset"/>
+        </div>
+        
+        
+        <h2></h2>
 
 
+    </div>
 
 
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
