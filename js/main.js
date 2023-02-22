@@ -25,6 +25,8 @@ const inputButton = document.getElementById('prezzo');
 inputButton.addEventListener('click', 
     
     function() {
-        document.querySelector('h2').innerHTML = `${prezzoFinale.toFixed(2)} €`
+        document.getElementById("surprise").innerHTML = `${prezzoFinale.toFixed(2)} €`
+        document.getElementById('nome_show').innerHTML = `${nome}`
+        
     }
 )
