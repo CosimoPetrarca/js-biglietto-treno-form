@@ -15,15 +15,15 @@
         <form action="" method="get">
             <div class="flex">
                 <div class="column">
-                    <label for="nome">Nome e Cognome:</label>
+                    <label class="label" for="nome">Nome e Cognome:</label>
                     <input class="under" type="text" id="nome" name="nome">
                 </div>
                 <div class="column">
-                    <label for="km">Chilometri da percorrere:</label>
+                    <label class="label" for="km">Chilometri da percorrere:</label>
                     <input class="under" type="number" id="km" name="km">
                 </div>
                 <div class="column">
-                    <label for="eta">Età del passeggero:</label>
+                    <label class="label" for="eta">Età del passeggero:</label>
                     <select class="under" id="eta" name="eta">
                         <option value="minorenni">Minorenne</option>
                         <option value="">Maggiorenne</option>
@@ -32,8 +32,8 @@
                 </div>
             </div>
             <div class="btn">
-                <button type="button" id="prezzo">Genera</button>
-                <input type="reset" value="Reset" />
+                <button class="genera" type="button" id="prezzo">Genera</button>
+                <input class="reset" type="reset" value="Reset" />
             </div>
         </form>
 
@@ -42,25 +42,25 @@
         <div class="stampa">
             <div>
                 <div class="flex">
-                    <div>
-                        <h3>NOME PASSEGGERO</h3>
-                        <h5 id="nome_show"></h5>
+                    <div class="nome_passeggero">
+                        <h2>NOME PASSEGGERO</h2>
+                        <h4 id="nome_show"></h4>
                     </div>
                     <div>
-                        <h3>Offerta</h3>
-                        <h5 id="offerta"></h5>
+                        <h2>Offerta</h2>
+                        <h4 id="offerta"></h4>
                     </div>
                     <div>
-                        <h3>Carrozza</h3>
-                        <h5 id=""></h5>
+                        <h2>Carrozza</h2>
+                        <h4 id="carrozza"></h4>
                     </div>
                     <div>
-                        <h3>Codice CP</h3>
-                        <h5 id=""></h5>
+                        <h2>Codice CP</h2>
+                        <h4 id="cp"></h4>
                     </div>
                     <div>
-                        <h3>Costo Biglietto</h3>
-                        <h5 id="surprise"></h5>
+                        <h2>Costo Biglietto</h2>
+                        <h4 id="surprise"></h4>
                     </div>
                 </div>
             </div>

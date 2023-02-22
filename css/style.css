@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: red;
+    background-color: #b91547;
     text-align: center;
 }
 h1{
@@ -31,7 +31,7 @@ form, .stampa{
 .flex{
     display: flex;
     justify-content: space-between;
-    padding: 30px 100px;
+    padding: 20px 100px;
 }
 
 .column{
@@ -45,4 +45,31 @@ form, .stampa{
 
 .under{
     margin-top: 20px;
+    border: 1px solid salmon;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.genera{
+    border: 2px solid orange;
+    padding: 10px;
+    color: #b91547;
+}
+
+.reset{
+    border: 2px solid gray;
+    padding: 10px;
+    color: #b91547;
+}
+
+#nome_show, #offerta, #surprise, #carrozza, #cp{
+    padding-top: 30px;
+}
+
+.label{
+    color: #b91547;
+}
+
+.nome_passeggero{
+    background-color: gray;
 }

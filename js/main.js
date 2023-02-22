@@ -25,6 +25,8 @@ if (eta === 'minorenni') {
 console.log("Il prezzo del biglietto è di " + prezzoFinale.toFixed(2) + " euro.");
 
 const inputButton = document.getElementById('prezzo');
+let randomCarroz = Math.floor((Math.random() * 100) + 1);
+let randomCp = Math.floor((Math.random() * 1000) + 1);
 
 inputButton.addEventListener('click', 
     
@@ -32,5 +34,7 @@ inputButton.addEventListener('click',
         document.getElementById("surprise").innerHTML = `${prezzoFinale.toFixed(2)} €`
         document.getElementById('nome_show').innerHTML = `${nome}`
         document.getElementById('offerta').innerHTML = `${sconto}`
+        document.getElementById("carrozza").innerHTML = randomCarroz;
+        document.getElementById("cp").innerHTML = randomCp;
     }
 )
