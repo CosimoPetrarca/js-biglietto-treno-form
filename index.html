@@ -13,23 +13,25 @@
     <div class="container">
         <h1>Calcola il prezzo del tuo biglietto</h1>
         <form action="" method="get">
-            <div>
-                <label for="nome">Nome:</label>
-                <input class="under" type="text" id="nome" name="nome">
+            <div class="flex">
+                <div class="column">
+                    <label for="nome">Nome e Cognome:</label>
+                    <input class="under" type="text" id="nome" name="nome">
+                </div>
+                <div class="column">
+                    <label for="km">Chilometri da percorrere:</label>
+                    <input class="under" type="number" id="km" name="km">
+                </div>
+                <div class="column">
+                    <label for="eta">Età del passeggero:</label>
+                    <select class="under" id="eta" name="eta">
+                        <option value="minorenni">Minorenne</option>
+                        <option value="">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+                </div>
             </div>
-            <div>
-                <label for="km">Chilometri da percorrere:</label>
-                <input class="under" type="number" id="km" name="km">
-            </div>
-            <div>
-                <label for="eta">Età del passeggero:</label>
-                <select id="eta" name="eta">
-                    <option value="minorenni">Minorenne</option>
-                    <option value="">Maggiorenne</option>
-                    <option value="over65">Over 65</option>
-                </select>
-            </div>
-            <div>
+            <div class="btn">
                 <button type="button" id="prezzo">Genera</button>
                 <input type="reset" value="Reset" />
             </div>
@@ -41,8 +43,8 @@
             <div>
                 <div class="flex">
                     <div>
-                        <h2>NOME PASSEGGERO</h2>
-                        <h3 id="nome_show"></h3>
+                        <h3>NOME PASSEGGERO</h3>
+                        <h5 id="nome_show"></h5>
                     </div>
                     <div>
                         <h3>Offerta</h3>
@@ -50,20 +52,20 @@
                     </div>
                     <div>
                         <h3>Carrozza</h3>
-                        <p id=""></p>
-                    </div> 
+                        <h5 id=""></h5>
+                    </div>
                     <div>
                         <h3>Codice CP</h3>
-                        <p id=""></p>
+                        <h5 id=""></h5>
                     </div>
                     <div>
                         <h3>Costo Biglietto</h3>
                         <h5 id="surprise"></h5>
-                    </div>      
+                    </div>
                 </div>
             </div>
         </div>
-        
+
 
 
     </div>

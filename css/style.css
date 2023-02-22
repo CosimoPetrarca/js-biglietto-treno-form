@@ -10,6 +10,10 @@ body{
     background-color: red;
     text-align: center;
 }
+h1{
+    color: white;
+    padding: 20px 0;
+}
 
 .container{
     width: 70%;
@@ -26,5 +30,19 @@ form, .stampa{
 
 .flex{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    padding: 20px;
+}
+
+.under{
+    margin-top: 20px;
 }
