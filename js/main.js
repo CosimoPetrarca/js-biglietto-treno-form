@@ -24,10 +24,16 @@ if (eta === 'minorenni') {
 /* visualizzazione del prezzo finale */
 console.log("Il prezzo del biglietto è di " + prezzoFinale.toFixed(2) + " euro.");
 
-const inputButton = document.getElementById('prezzo');
-let randomCarroz = Math.floor((Math.random() * 100) + 1);
-let randomCp = Math.floor((Math.random() * 1000) + 1);
 
+/* variabile per la comparsa del biglietto */
+const block = document.getElementById('block')
+/* variabile per la comparsa del prezzo nel biglietto */
+const inputButton = document.getElementById('prezzo');
+/* variabile per la comparsa della carrozza */
+let randomCarroz = Math.floor((Math.random() * 100) + 1);
+/* variabile per la comparsa della codice cp */
+let randomCp = Math.floor((Math.random() * 1000) + 1);
+/* funzioni al click */
 inputButton.addEventListener('click', 
     
     function() {
@@ -36,5 +42,6 @@ inputButton.addEventListener('click',
         document.getElementById('offerta').innerHTML = `${sconto}`
         document.getElementById("carrozza").innerHTML = randomCarroz;
         document.getElementById("cp").innerHTML = randomCp;
+        block.classList.add('block');
     }
 )

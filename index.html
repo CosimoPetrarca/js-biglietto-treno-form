@@ -12,8 +12,9 @@
 <body>
     <div class="container">
         <h1>Calcola il prezzo del tuo biglietto</h1>
+        <!-- primo contenitore -->
         <form action="" method="get">
-            <div class="flex">
+            <div class="flex space">
                 <div class="column">
                     <label class="label" for="nome">Nome e Cognome:</label>
                     <input class="under" type="text" id="nome" name="nome">
@@ -36,12 +37,14 @@
                 <input class="reset" type="reset" value="Reset" />
             </div>
         </form>
+    <!-- /primo contenitore -->
 
         <h1>IL TUO BIGLIETTO</h1>
-
-        <div class="stampa">
+        <!-- secondo contenitore -->
+        <div class="stampa" id="block">
             <div>
-                <div class="flex">
+                <h2 class="dettaglio">DETTAGLIO PASSEGGERI</h2>
+                <div class="flex border">
                     <div class="nome_passeggero">
                         <h2>NOME PASSEGGERO</h2>
                         <h4 id="nome_show"></h4>
@@ -65,15 +68,11 @@
                 </div>
             </div>
         </div>
-
-
-
+        <!-- /secondo contenitore -->
     </div>
-    <h2></h2>
-
-
-
+    <!-- java script -->
     <script src="js/main.js"></script>
+    <!-- /java script -->
 </body>
 
 </html>

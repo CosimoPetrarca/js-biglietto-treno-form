@@ -22,15 +22,29 @@ h1{
 }
 
 
-form, .stampa{
+form{
     background-color: white;
     border-radius: 20px;
+    box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.42);
 }
 
+.stampa{
+    display: none;
+    height: 150px;
+    background-color: white;
+    padding: 0 20px
+}
+
+.block{
+    display: block;
+}
 
 .flex{
     display: flex;
     justify-content: space-between;
+}
+
+.space{
     padding: 20px 100px;
 }
 
@@ -62,6 +76,11 @@ form, .stampa{
     color: #b91547;
 }
 
+.dettaglio{
+    text-align: start;
+    padding: 10px 0;
+}
+
 #nome_show, #offerta, #surprise, #carrozza, #cp{
     padding-top: 30px;
 }
@@ -72,4 +91,9 @@ form, .stampa{
 
 .nome_passeggero{
     background-color: gray;
+}
+
+.border{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
